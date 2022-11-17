@@ -270,10 +270,11 @@ public class CoverFlowLayoutManger extends RecyclerView.LayoutManager {
         if (!mIsFlatFlow) { //不是平面普通滚动的情况下才进行缩放
             child.setScaleX(computeScale(frame.left - mOffsetAll)); //缩放
             child.setScaleY(computeScale(frame.left - mOffsetAll)); //缩放
+         //   child.setScaleY(computeScale(frame.left/2)); //缩放
         }
 
         if (mItemGradualAlpha) {
-            child.setAlpha(computeAlpha(frame.left - mOffsetAll));
+           child.setAlpha(computeAlpha(frame.left - mOffsetAll));
         }
 
         if (mItemGradualGrey) {
