@@ -1,0 +1,3 @@
+include ':coverflow'
+include ':app'
+rootProject.name = "mycoverflow"
